@@ -1,0 +1,28 @@
+#app {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20.25rem;
+  grid-template-areas: "aside";
+}
+aside {
+  grid-area: aside;
+}
+.display-off {
+  display: none;
+}
+main {
+  padding: 1.5rem;
+
+  & form {
+    margin: 0;
+  }
+
+  & .actions-wrapper {
+    flex-direction: column;
+    text-align: center;
+
+    & .btn-secondary {
+      margin-left: 0;
+    }
+  }
+}
